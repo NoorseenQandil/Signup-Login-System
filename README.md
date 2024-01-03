@@ -23,13 +23,19 @@ Signup & Login System created with HTML, CSS, Bootstrap and Java Script
 * If you login without validation, it will be refused.
 * After successfully login, home page will be opened. It includes welcome message with the user name related to the used email
 
-### 4. Reset Password.
-* If you forget your password, you can reset it and use it to login again.
+### 4. Logout
+* If you press logout, it will remove the username key from local storage and go back.
 
-### 5. Clear inputs
+### 5. Reset Password.
+* If you forget your password, you can reset it and use it to login again.
+  
+### 6. Save in local storage
+* The entered data will be saved in the local storage to use it again.
+
+### 7. Clear inputs
 * After login or signup process, clear all data inputs.
   
-### 6. Responsive Design
+### 8. Responsive Design
 * Page design is responsive for all devices.
 
 
