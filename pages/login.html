@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <meta name="description" content="Login System - HTML, CSS, JS, Bootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Sweet alert message -->
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <!-------- Import Fontawesome CSS File ---------->
+        <link rel="stylesheet" href="../CSS/all.min.css">
+        <!-------- Import Bootstrap CSS File ---------->
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <!-------- Import CSS File -------------------->
+        <link rel="stylesheet" href="../CSS/login.css">
+    </head>
+    <body>
+        <div class="main-body">
+            <section class="wrapper" id="wrapper">
+                <!------------------------------ Login Form -------------------------------------->
+                <div class="form login" id="form-login">
+                    <header id="loginHeader"> Login </header>
+                    <form action="#">
+                        <input class="form-control" type="email" placeholder="Email" id="loginEmail">
+                        <!-- <p class="text-dark d-none example" id="LoginEmailNotion">Enter your email.</p> -->
+                        <p class="d-none example" id="EmailWarning">You Must Enter Valid Email.</p>
+    
+                        <input class="form-control" type="password" placeholder="Password" id="loginPassword">
+                        <!-- <p class="text-dark d-none example" id="LoginPasswordNotion">Enter your password.</p> -->
+                        <p class="d-none example" id="PasswordWarning">You Must Enter Valid Password.</p>
+    
+                        <a href="newPassword.html">forgot password?</a>
+    
+                        <input type="submit" value="Login" id="loginBtn">
+                        
+                        <p class="text-dark mt-3">Don’t have an account?
+                            <a class="text-dark text-decoration-none" href="signup.html" id="signupLink">Signup</a>
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+
+        <!---Sweet Alert Message ------>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <!----------- Bootstrap JS File ----------------->
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+        <!----------- Main JS File ---------------------->
+        <script src="../js/login.js"></script>
+    </body>
+</html>

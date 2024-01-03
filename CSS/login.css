@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main-body{
+    background-image: url('../images/lavender.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+  position: relative;
+  max-width: 65%;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.875rem 7.5rem;
+  background-image: linear-gradient(#756AB6, #fff);
+  overflow:hidden;
+  /* background-image: linear-gradient(#756AB6, #efde88); */
+}
+
+.form.login header{
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+}
+.wrapper form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+form input{
+  height: 3.75rem;
+  outline: none;
+  border: none;
+  padding: 0 .9375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  border-radius: .5rem;
+  background: #fff;
+}
+form input:focus{
+  box-shadow: 0 .0625rem 0 #1c1c1c;
+}
+.form.login input{
+  border: .0625rem solid #756AB6;
+}
+.form.login input:focus{
+  box-shadow: 0 .0625rem 0 #756AB6;
+}
+form .checkbox{
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+.checkbox input[type="checkbox"]{
+  height: 1rem;
+  width: 1rem;
+  accent-color: #fff;
+  cursor: pointer;
+}
+form .checkbox label{
+  cursor: pointer;
+  color: #000;
+}
+form a{
+  color: #333;
+  text-decoration: none;
+}
+form a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  margin-top: .9375rem;
+  padding: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form.login input[type="submit"]{
+  background-color: #756AB6;
+  color: #fff;
+  border: none;
+}
+.form-control{
+  box-shadow: none !important;
+}
+#signupLink:hover{
+  text-decoration: underline !important;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <link name="viewport" content="width=device-width, initial-scale=1">
+        <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-dHIUKgAC2DoM4H/6MOoZi5Dp7ss3d2z7U7u4e9e/ffh5O4ZRD8pZtdcJ4gNP42P8kCLeLpHeqb9W7yCee1Qq3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <!-- login page stylesheet -->
+    <link rel="stylesheet" href="../CSS/welcome.css" />
+  </link>
+  <body onload="sayWelcome()">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bolder fs-3 p-2 text-white" href="index.html"
+          >H O M E </a
+        >
+
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html">
+                <button
+                onclick="logout()"
+                id="logout_btn"
+                class="btn btn-outline-danger text-light">
+                <!-- <i class="fa-solid fa-delete-left"></i> -->
+                Log Out
+              </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container loader">
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+        <span id="userName">
+
+        </span>
+      </div>
+    </section>
+
+    <!-- bootstrap js  -->
+    <script src="../Js/bootstrap.bundle.min.js"></script>
+    <!-- login javascript file  -->
+    <script src="../JS/main.js"></script>
+</body>
+</html>

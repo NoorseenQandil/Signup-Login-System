@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main-body{
+    background-image: url('../images/lavender.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+  position: relative;
+  max-width: 65%;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.875rem 7.5rem;
+  background-image: linear-gradient(#756AB6, #fff);
+  overflow:hidden;
+  /* background-image: linear-gradient(#756AB6, #efde88); */
+}
+.form.login{
+  position: absolute;
+  left: 50%;
+  bottom: -86%;
+  transform: translateX(-50%);
+  width: calc(100% + 13.75rem);
+  padding: 1.25rem 8.75rem;
+  border-radius: 50%;
+  height: 100%;
+  /* background-image: linear-gradient(#ffffff, #756AB6); */
+  background: #fff;
+  transition: all 0.6s ease;
+}
+.wrapper.active .form.login{
+  bottom: -15%;
+  box-shadow: 0 -0.3125rem .625rem rgba(0, 0, 0, 0.1);
+  border-radius: 17%;
+}
+.form header{
+  font-size: 1.875rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form.login header{
+  color: #756AB6;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.wrapper form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+form input{
+  height: 3.75rem;
+  outline: none;
+  border: none;
+  padding: 0 .9375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  border-radius: .5rem;
+  background: #fff;
+}
+form input:focus{
+  box-shadow: 0 .0625rem 0 #1c1c1c;
+}
+.form.login input{
+  border: .0625rem solid #756AB6;
+}
+.form.login input:focus{
+  box-shadow: 0 .0625rem 0 #756AB6;
+}
+form .checkbox{
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+.checkbox input[type="checkbox"]{
+  height: 1rem;
+  width: 1rem;
+  accent-color: #fff;
+  cursor: pointer;
+}
+form .checkbox label{
+  cursor: pointer;
+  color: #000;
+}
+form a{
+  color: #333;
+  text-decoration: none;
+}
+form a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  margin-top: .9375rem;
+  padding: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form.login input[type="submit"]{
+  background-color: #756AB6;
+  color: #fff;
+  border: none;
+}
+.form-control{
+  box-shadow: none !important;
+}
+
+/*************************************** Home Page Style *******************************************/
+#home {
+    min-height: 100vh;
+    background-image: url('../images/stars.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    /* background-image: linear-gradient(#756AB6, #fff) !important; */
+    background-color: #756AB6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.loader span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    transition: all 0.5s;
+    animation: animate 2s infinite;
+    font-size: 2rem;
+}
+
+.loader span:nth-child(1){
+    animation-delay: 0.1s;
+}
+.loader span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(3){
+    animation-delay: 0.3s;
+}
+.loader span:nth-child(4){
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(5){
+    animation-delay: 0.5s;
+}
+.loader span:nth-child(6){
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(7){
+    animation-delay: 0.7s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        color: rgba(255, 255, 255, 0.1);
+        transform: translateY(0);
+        margin-left: 0;
+    }
+    25%
+    {
+        color: #756AB6;
+        transform: translateY(-15px);
+        margin-left: .625rem;
+        text-shadow: 0 .9375rem .3125rem rgba(0,0,0,1);
+    }
+    100%
+    {
+        color: rgba(255, 255, 255, 0.1);
+        transform: translateY(0);
+    }
+}
